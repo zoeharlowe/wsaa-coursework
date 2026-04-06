@@ -3,7 +3,7 @@
 # Author: Zoe McNamara Harlowe
 
 import pymysql
-from config1 import config as cfg
+from labs.week07.config1 import config as cfg
 
 class studentDAO:
     def __init__(self):

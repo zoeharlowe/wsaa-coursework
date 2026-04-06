@@ -4,7 +4,7 @@
 
 import requests
 import urllib.parse
-from config import config as cfg
+from labs.week04.config import config as cfg
 
 targeturl = "https://andrewbeatty1.pythonanywhere.com/bookviewer.html"
 apiKey = cfg["htmltopdfkey"]

@@ -2,7 +2,7 @@
 # This program tests the studentDAO class.
 # Author: Zoe McNamara Harlowe
 
-from zstudentDAO import studentDAO
+from labs.week07.zstudentDAO import studentDAO
 
 student = {
     "name": "Mary",

@@ -4,7 +4,7 @@
 
 import requests
 import json
-from config import config2 as cfg
+from labs.week04.config import config2 as cfg
 import base64
 
 apiKey = cfg["htmltopdfkey"]
