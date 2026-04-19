@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Get All</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<script>
+// 1. getAll now accepts a callback
+function getAll(callback) {
+    $.ajax({
+        url: "http://andrewbeatty1.pythonanywhere.com/books",
+        method: "GET",
+        dataType: "JSON",
+        success: function(result) {
+            callback(result);   // 2. call the callback here
+        },
+        error: function(xhr, status, error) {
+            console.log("error: " + status + " msg: " + error);
+        }
+    });
+}
+
+// 3. This is the callback function
+function processGetAll(result) {
+    console.log("in process");
+    console.log(result);
+}
+
+// 4. Call getAll and pass the callback
+getAll(processGetAll);
+
+</script>
+
+</body>
+</html>
